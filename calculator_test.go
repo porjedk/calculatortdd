@@ -11,4 +11,12 @@ func TestCalculator (t *testing.T) {
 			t.Errorf("got '%s' want '%s'", got, want)
 		}
 	})
+
+	t.Run("Test Input 1 and Return 1", func(t *testing.T) {
+		got := Calculator("1")
+		want := "1"
+		if got != want {
+			t.Errorf("got '%s' want '%s'", got, want)
+		}
+	})
 }
