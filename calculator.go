@@ -24,9 +24,9 @@ func Calculator(got string) string{
 	if got == "1,2" {
 		nums := strings.Split(got, ",")
 		num1, err := strconv.Atoi(nums[0])
-		errorHandler(err, "Can not convert input string to number!")
+		errorHandler(err, "Can not convert input string to number")
 		num2, err := strconv.Atoi(nums[1])
-		errorHandler(err, "Can not convert input string to number!")
+		errorHandler(err, "Can not convert input string to number")
 		want = strconv.Itoa(num1+num2)
 	}
 	return want
